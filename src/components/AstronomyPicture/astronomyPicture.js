@@ -22,7 +22,7 @@ const AstronomyPicture = props => {
                     value={props.date}
                     onChange={props.handlerCalendar} />
                 <button
-                    disabled={props.isAdd}
+                    disabled={props.isAdd || props.error}
                     className="btn btn-primary"
                     onClick={props.onClickButton}>
                     Add picture to gallery
