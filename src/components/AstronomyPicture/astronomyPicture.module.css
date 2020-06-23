@@ -1,23 +1,28 @@
 .wrapper {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
+.wrapper button {
+  height: 40px;
+  width: 157px;
+  font-size: 12px;
+}
+
 .picture {
+    text-align: center;
     width: 50%;
 }
 
 .picture img {
-    height: 80%;
-    width: 80%;
-}
-
-.picture p {
-    margin: 0;
+    height: 400px;
+    width: 400px;
 }
 
 .calendar input {
+    height: 40px;
     margin: 0 10px;
 }
 
