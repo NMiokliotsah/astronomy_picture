@@ -4,7 +4,7 @@ import Gallery from './Gallery';
 
 class GalleryContainer extends React.Component {
     render() {
-        return <Gallery img={this.props.img}/>
+        return <Gallery img={this.props.img} />
     }
 }
 

@@ -4,7 +4,7 @@ import style from './Gallery.module.css'
 const Gallery = props => {
     let images = props.img.map(img => {
         return <div key={img.date}>
-            <img src={img.url} />
+            <img src={img.url} alt=""/>
             <p>Date: {img.date}</p>
         </div>
     });

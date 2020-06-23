@@ -9,8 +9,8 @@ const Navbar = props => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className={props.active === "/" ? "nav-item active": 'nav-item'} onClick={props.onClick}>
-                        <Link className="nav-link" to='/'>Picture of the day</Link>
+                    <li className={props.active === "/astronomy_picture" ? "nav-item active": 'nav-item'} onClick={props.onClick}>
+                        <Link className="nav-link" to='/astronomy_picture'>Picture of the day</Link>
                     </li>
                     <li className={props.active === "/gallery" ? "nav-item active": 'nav-item'} onClick={props.onClick}>
                         <Link className="nav-link" to="/gallery">Gallery</Link>

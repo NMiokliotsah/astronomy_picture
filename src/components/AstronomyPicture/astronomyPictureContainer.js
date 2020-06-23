@@ -30,7 +30,7 @@ class AstronomyPictureContainer extends React.Component {
     }
     onClickButton = () => {
         const error = this.state.error;
-
+        console.log(this.state.date)
         if (!error) {
             this.props.setImage(this.state.imageUrl, this.state.date);
             this.setState({ isAdd: true });
@@ -62,9 +62,11 @@ class AstronomyPictureContainer extends React.Component {
     }
     componentDidMount() {
         const date = localStorage.getItem('date');
-        this.setState({ date });
-        this.checkImg(date);
+        if (date) {
+            this.setState({ date });
+        }
         const imgDate = date ? date : this.state.date;
+        this.checkImg(imgDate);
         this.setState({ isFetching: true });
 
         api.getPicture(imgDate)

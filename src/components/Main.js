@@ -6,7 +6,7 @@ import GalleryContainer from './Gallery/GalleryContainer';
 const Main = () => {
     return (
         <Switch>
-            <Route exact path='/' component={AstronomyPictureContainer} />
+            <Route path='/astronomy_picture' component={AstronomyPictureContainer} />
             <Route path='/gallery' component={GalleryContainer} />
         </Switch>
     );

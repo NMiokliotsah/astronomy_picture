@@ -13,7 +13,7 @@ const AstronomyPicture = props => {
                     }
                     {props.error ?
                         <p className={style.error}>{props.error}</p> :
-                        !props.isFetching && <img src={props.imageUrl} />
+                        !props.isFetching && <img src={props.imageUrl} alt=""/>
                     }
                 </div>
                 <Calendar

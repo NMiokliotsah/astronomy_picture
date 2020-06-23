@@ -9,7 +9,7 @@ const NavbarContainer = () => {
     const onClick = e => {
         const location = history.location.pathname;
         
-        location === '/gallery' ? setActive('/gallery') : setActive('/');
+        location === '/gallery' ? setActive('/gallery') : setActive('/astronomy_picture');
     }
     return <Navbar onClick={onClick} active={active} />
 }

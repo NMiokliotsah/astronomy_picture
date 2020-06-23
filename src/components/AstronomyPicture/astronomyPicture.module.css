@@ -44,3 +44,10 @@
         margin: 10px;
     }
 }
+
+@media(max-width: 500px) {
+    .picture img {
+        height: 70%;
+        width: 70%;
+    }
+}
