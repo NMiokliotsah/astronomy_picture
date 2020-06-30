@@ -15,6 +15,7 @@ class AstronomyPictureContainer extends React.Component {
             super(props);
             this.state = {
                 imageUrl: null,
+                explanation: null,
                 error: null,
                 date: formatDate(new Date()),
                 isFetching: false,
@@ -35,12 +36,14 @@ class AstronomyPictureContainer extends React.Component {
                 this.setState({ isAdd: true });
             }
         }
-        handleImgError = (error, imageUrl) => {
+        handleImgError = (error, image) => {
             if (error) {
                 this.setState({ error: "Image does not exists" });
+                this.setState({ explanation: null });
                 this.setState({ isFetching: false });
             } else {
-                this.setState({ imageUrl });
+                this.setState({ imageUrl: image.url });
+                this.setState({ explanation: image.explanation})
                 this.setState({ error: null });
                 this.setState({ isFetching: false });
             }
@@ -59,7 +62,7 @@ class AstronomyPictureContainer extends React.Component {
                 api.getPicture(date)
                     .then(res => {
                         const error = handlerImageRequestError(res.url);
-                        this.handleImgError(error, res.url);
+                        this.handleImgError(error, res);
                     });
             }
         }
@@ -76,7 +79,7 @@ class AstronomyPictureContainer extends React.Component {
             api.getPicture(imgDate)
                 .then(res => {
                     const error = handlerImageRequestError(res.url);
-                    this.handleImgError(error, res.url);
+                    this.handleImgError(error, res);
                 });
         }
 
@@ -88,7 +91,8 @@ class AstronomyPictureContainer extends React.Component {
                 error={this.state.error}
                 isFetching={this.state.isFetching}
                 onClickButton={this.onClickButton}
-                isAdd={this.state.isAdd} />
+                isAdd={this.state.isAdd}
+                explanation={this.state.explanation} />
         }
     }
 

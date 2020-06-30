@@ -1,8 +1,9 @@
 import React from 'react';
+import style from './Calendar.module.css';
 
 const Calendar = (props) => {
     return (
-        <div className={props.style.calendar}>
+        <div className={style.calendar}>
             <input 
                 name={props.name} 
                 type="date" 

@@ -2,21 +2,25 @@
     text-align: center;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
 
 .gallery img {
-    height: 200px;
-    width: 200px;
-    margin: 20px 20px 0 0;
-    /* margin-right: 20px; */
+    height: 300px;
+    width: 300px;
 }
 
-@media(max-width: 600px) {
-    .gallery {
-        justify-content: center;
-    }
+.galleryItem {
+    margin: 1rem;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
 }
