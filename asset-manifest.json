@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/astronomy_picture/static/css/main.5b6b890e.chunk.css",
-    "main.js": "/astronomy_picture/static/js/main.553302e4.chunk.js",
-    "main.js.map": "/astronomy_picture/static/js/main.553302e4.chunk.js.map",
+    "main.css": "/astronomy_picture/static/css/main.9b7d1669.chunk.css",
+    "main.js": "/astronomy_picture/static/js/main.b99f2630.chunk.js",
+    "main.js.map": "/astronomy_picture/static/js/main.b99f2630.chunk.js.map",
     "runtime-main.js": "/astronomy_picture/static/js/runtime-main.2cc6460a.js",
     "runtime-main.js.map": "/astronomy_picture/static/js/runtime-main.2cc6460a.js.map",
-    "static/js/2.898e2feb.chunk.js": "/astronomy_picture/static/js/2.898e2feb.chunk.js",
-    "static/js/2.898e2feb.chunk.js.map": "/astronomy_picture/static/js/2.898e2feb.chunk.js.map",
+    "static/js/2.07899d80.chunk.js": "/astronomy_picture/static/js/2.07899d80.chunk.js",
+    "static/js/2.07899d80.chunk.js.map": "/astronomy_picture/static/js/2.07899d80.chunk.js.map",
     "index.html": "/astronomy_picture/index.html",
-    "precache-manifest.7bfeb3ae315a172bb5eaebd9b523ca70.js": "/astronomy_picture/precache-manifest.7bfeb3ae315a172bb5eaebd9b523ca70.js",
+    "precache-manifest.aa5121ef95108e0a185702b54a7c1ba7.js": "/astronomy_picture/precache-manifest.aa5121ef95108e0a185702b54a7c1ba7.js",
     "service-worker.js": "/astronomy_picture/service-worker.js",
-    "static/css/main.5b6b890e.chunk.css.map": "/astronomy_picture/static/css/main.5b6b890e.chunk.css.map",
-    "static/js/2.898e2feb.chunk.js.LICENSE.txt": "/astronomy_picture/static/js/2.898e2feb.chunk.js.LICENSE.txt"
+    "static/css/main.9b7d1669.chunk.css.map": "/astronomy_picture/static/css/main.9b7d1669.chunk.css.map",
+    "static/js/2.07899d80.chunk.js.LICENSE.txt": "/astronomy_picture/static/js/2.07899d80.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2cc6460a.js",
-    "static/js/2.898e2feb.chunk.js",
-    "static/css/main.5b6b890e.chunk.css",
-    "static/js/main.553302e4.chunk.js"
+    "static/js/2.07899d80.chunk.js",
+    "static/css/main.9b7d1669.chunk.css",
+    "static/js/main.b99f2630.chunk.js"
   ]
 }
