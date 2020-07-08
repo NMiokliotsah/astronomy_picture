@@ -13,9 +13,15 @@
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
 
+.gallery p {
+    color: red;
+    text-align: center;
+}
+
 .gallery img {
     height: 300px;
     width: 300px;
+    object-fit: cover;
 }
 
 .galleryItem {
@@ -23,4 +29,10 @@
     cursor: pointer;
     align-self: center;
     justify-self: center;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 100%;
+    }
 }
